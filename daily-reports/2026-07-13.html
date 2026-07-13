@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数字化/智能化应用灵感日报 2026-07-13</title>
+  <style>
+    :root {
+      color-scheme: light;
+      --text: #1f2937;
+      --muted: #64748b;
+      --border: #d8dee9;
+      --header: #eef6f8;
+      --link: #0f766e;
+      --bg: #f6f8fb;
+      --card: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", Arial, sans-serif;
+      line-height: 1.72;
+      color: var(--text);
+      background: var(--bg);
+    }
+    main {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 36px 18px 64px;
+      background: var(--card);
+    }
+    h1, h2, h3 {
+      line-height: 1.3;
+      color: #0f172a;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 30px;
+    }
+    h2 {
+      margin-top: 36px;
+      padding-top: 18px;
+      border-top: 2px solid #e5e7eb;
+      font-size: 23px;
+    }
+    h3 {
+      margin-top: 26px;
+      font-size: 18px;
+    }
+    p, li { font-size: 15px; }
+    a {
+      color: var(--link);
+      text-decoration: none;
+      overflow-wrap: anywhere;
+    }
+    a:hover { text-decoration: underline; }
+    .note {
+      margin: 16px 0 22px;
+      padding: 14px 16px;
+      border-left: 4px solid #14b8a6;
+      background: #f0fdfa;
+      color: #134e4a;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 14px 0 24px;
+      font-size: 14px;
+    }
+    th, td {
+      border: 1px solid var(--border);
+      padding: 9px 10px;
+      vertical-align: top;
+    }
+    th {
+      background: var(--header);
+      font-weight: 700;
+      color: #0f172a;
+    }
+    ul, ol { padding-left: 22px; }
+    strong { color: #0f172a; }
+    .table-wrap {
+      width: 100%;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .meta {
+      color: var(--muted);
+      font-size: 14px;
+    }
+    @media (max-width: 640px) {
+      main { padding: 24px 14px 48px; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 20px; }
+      table { font-size: 13px; min-width: 760px; }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>数字化/智能化应用灵感日报 2026-07-13</h1>
+  <div class="note">
+    聚焦：AI 视觉质检、EL/PL 光伏缺陷检测、工业数据底座、边缘预测维护、质量追溯。优先采用 2025-07-13 至 2026-07-13 期间资料；少量光伏强相关案例略早于一年，已在文中标注。
+  </div>
+
+  <h2>一、今日精选案例总览</h2>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>序号</th><th>案例名称</th><th>行业</th><th>来源</th><th>关键词</th><th>推荐等级</th><th>简要价值</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Amazon Nova Pro 零训练视觉缺陷检测</td><td>制造业/AI 质检</td><td><a href="https://aws.amazon.com/blogs/industries/implement-zero-training-visual-defect-detection-in-manufacturing-with-amazon-nova-pro/">AWS</a></td><td>多模态大模型、零样本、JSON 输出、API 集成</td><td>A</td><td>适合小批量、多品种、缺陷样本不足场景，能快速做光伏外观/包装/铭牌检查 MVP。</td></tr>
+        <tr><td>2</td><td>BMW 视觉与声音分析服务 VSAS</td><td>汽车制造</td><td><a href="https://aws.amazon.com/solutions/case-studies/bmw-vsas-case-study/">AWS Case Study</a></td><td>图像数据湖、元数据检索、标注、AI 数据资产</td><td>A</td><td>启发光伏工厂建设统一的 EL/AOI/IV/工艺图像资产库，而不是让图片散落在设备电脑。</td></tr>
+        <tr><td>3</td><td>凌云光光伏电池片 AI 智检</td><td>光伏电池制造</td><td><a href="https://www.lusterinc.com/%E8%B5%B0%E8%BF%9B%E5%85%89%E4%BC%8F%E9%BE%99%E5%A4%B4%EF%BC%9A%E4%B8%80%E5%9D%97%E7%94%B5%E6%B1%A0%E7%89%87%E7%9A%84%E3%80%8Cai%E3%80%8D%E6%99%BA%E6%A3%80%E4%B9%8B%E6%97%85/">凌云光</a></td><td>AOI、PL、云边端质量平台、在线迭代</td><td>A</td><td>虽发布于 2025-04，略超一年，但场景极贴近光伏：隐裂、断栅、漏浆、换型模型迭代。</td></tr>
+        <tr><td>4</td><td>Arm/Neuton.AI TinyML 预测性维护</td><td>智慧工厂/设备维护</td><td><a href="https://www.arm.com/zh-tw/company/news/2025/07/predictive-maintenance-smart-factories">Arm</a></td><td>TinyML、边缘模型、泵/压缩机、传感器</td><td>B+</td><td>适合层压机真空泵、空压机、冷却水泵等设备，用低成本传感器先做异常预警。</td></tr>
+        <tr><td>5</td><td>PV-YOLOv12n 光伏缺陷检测模型研究</td><td>光伏检测/深度学习</td><td><a href="https://www.nature.com/articles/s41598-025-13956-7">Scientific Reports</a></td><td>EL 图像、YOLO、轻量模型、边缘部署</td><td>B+</td><td>提供了光伏 EL/RGB 缺陷检测模型结构思路，可借鉴小目标、细裂纹、灰尘类缺陷检测。</td></tr>
+        <tr><td>6</td><td>Kiwa 2025 光伏组件制造质量报告</td><td>光伏质量/供应链</td><td><a href="https://www.kiwa.com/us/en-us/about-kiwa/entities/kiwa-pi-berlin-usa/2025pvqualityreport/">Kiwa PI Berlin</a></td><td>工厂审核、生产监督、出货检验、BOM 变化</td><td>B</td><td>可转化为内部质量风险标签体系：工厂审核问题、来料批次、制程异常、出货抽检联动。</td></tr>
+        <tr><td>7</td><td>Intertek CEA 工厂到现场检查决策</td><td>光伏资产/质量闭环</td><td><a href="https://www.intertekcea.com/cea-blog/how-to-make-the-right-inspection-decisions-for-solar-assets-from-the-factory-to-the-field">Intertek CEA</a></td><td>EL 测试、现场与工厂数据打通、AI 标注</td><td>B</td><td>提醒光伏组件厂把客户现场失效、EL 复判、工厂批次数据做闭环，反哺制程质量。</td></tr>
+        <tr><td>8</td><td>Rockwell 光伏辅材 MOM/SCADA 透明工厂</td><td>光伏辅材/数字工厂</td><td><a href="https://www.rockwellautomation.com.cn/company/news/case-studies/photovoltaic-mom-system.html">Rockwell Automation</a></td><td>MOM、SCADA、ERP/WMS 集成、无纸化</td><td>B-</td><td>发布于 2024-07，时效较旧，但对组件工厂的生产透明化、计划调度、能耗管理仍有参考。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>二、重点案例详解</h2>
+  <h3>1. Amazon Nova Pro 零训练视觉缺陷检测</h3>
+  <p><strong>来源链接：</strong><a href="https://aws.amazon.com/blogs/industries/implement-zero-training-visual-defect-detection-in-manufacturing-with-amazon-nova-pro/">AWS - Implement Zero-Training Visual Defect Detection in Manufacturing with Amazon Nova Pro</a></p>
+  <p><strong>应用场景：</strong>缺陷样本不足、产品变化频繁、传统视觉模型训练成本高的质检点。</p>
+  <p><strong>核心做法：</strong>用参考图与待检图输入多模态大模型，通过结构化 prompt 要求模型输出缺陷类型、原因、置信判断和 bounding box；通过 API Gateway、Lambda、Bedrock 形成轻量服务。</p>
+  <p><strong>使用技术：</strong>Amazon Nova Pro、Amazon Bedrock、API Gateway、Lambda、图像预处理、JSON 解析、prompt 工程。</p>
+  <p><strong>光伏启发：</strong>包装外观、标签缺失、接线盒铭牌、托盘混料、工装摆放错误等低节拍场景，可以先用多模态模型做“人机复核”。</p>
+  <p><strong>落地想法：</strong>建设“低样本视觉检查助手”，先接入离线图片或工位相机，对组件标签、条码、边框划伤、接线盒胶量外观、托盘摆放进行 OK/NOK 复核，并把结果写回 MES 异常单。</p>
+  <p><strong>开发难度：</strong>中等。MVP 难点不在模型，而在现场拍照稳定性、输出 JSON 校验、误报复核界面、与 MES/质量单据对接。</p>
+  <p><strong>预期收益：</strong>缩短新检测点上线周期；减少人工抽检漏项；为后续训练专用小模型积累标注数据。风险是单图推理速度不适合直接接到高速主线剔除。</p>
+
+  <h3>2. BMW VSAS 视觉与声音分析服务</h3>
+  <p><strong>来源链接：</strong><a href="https://aws.amazon.com/solutions/case-studies/bmw-vsas-case-study/">AWS - BMW Group VSAS Case Study</a></p>
+  <p><strong>应用场景：</strong>跨工厂图像/音频数据统一存储、检索、标注和 AI 分析。</p>
+  <p><strong>核心做法：</strong>BMW 将原本分散的图像、音频和计算机视觉产品统一为 VSAS，支撑 16 个生产基地，处理平均每日 130 万个图像和音频文件，管理 1.3 PB 数据，并用 OpenSearch 做元数据查询。</p>
+  <p><strong>使用技术：</strong>Amazon S3、S3 Intelligent-Tiering、OpenSearch、ECS、EC2、Graviton、Transfer Family、元数据索引、数据分层存储。</p>
+  <p><strong>光伏启发：</strong>AI 质检规模化的基础不是单个模型，而是“图片和元数据能被找回来”。</p>
+  <p><strong>落地想法：</strong>建立组件图像数据底座：EL、外观、层压后检、包装、IV 曲线截图、设备报警截图统一归档；用组件 SN、工单、设备号、班次、供应商批次、缺陷码做索引。</p>
+  <p><strong>开发难度：</strong>中高。需要定义数据标准、采集接口、存储生命周期和权限；但可先从一个车间或一条线做轻量版本。</p>
+  <p><strong>预期收益：</strong>减少质量追溯取证时间；提高 AI 模型训练样本召回效率；支持客户投诉时快速定位同批风险组件。</p>
+
+  <h3>3. 凌云光光伏电池片 AI 智检</h3>
+  <p><strong>来源链接：</strong><a href="https://www.lusterinc.com/%E8%B5%B0%E8%BF%9B%E5%85%89%E4%BC%8F%E9%BE%99%E5%A4%B4%EF%BC%9A%E4%B8%80%E5%9D%97%E7%94%B5%E6%B1%A0%E7%89%87%E7%9A%84%E3%80%8Cai%E3%80%8D%E6%99%BA%E6%A3%80%E4%B9%8B%E6%97%85/">凌云光 - 光伏电池片 AI 智检</a></p>
+  <p><strong>应用场景：</strong>丝网印刷 AOI、隐裂检测、PL 检测、多工艺段质量追溯和换型模型迭代。</p>
+  <p><strong>核心做法：</strong>AOI + F.Brain + GMQM，结合光学成像优化、深度学习缺陷分类、云边端质量平台，把生产数据和质量分析数据关联起来。</p>
+  <p><strong>使用技术：</strong>AOI、PL 光致发光检测、近红外光源、深度学习分类、模板比对、在线样本采集、模型训练/封装/部署、质量追溯平台。</p>
+  <p><strong>光伏启发：</strong>该案例最有价值的是“模型迭代链路”而不是单个检测模型。光伏产线换型频繁，模型从采样、训练到部署必须在线闭环。</p>
+  <p><strong>落地想法：</strong>在组件 EL/AOI 工位增加“缺陷样本自动回流池”：复判员确认的误报、漏检、突发缺陷自动进入训练集；按产品型号、设备、班次建立版本化模型包。</p>
+  <p><strong>开发难度：</strong>中高。若先做离线训练集管理，难度可降到中等。</p>
+  <p><strong>预期收益：</strong>降低误判停线和复判人力；缩短新产品/新网版/新材料导入后的检测稳定周期。时效说明：来源发布于 2025-04-27，略早于最近一年窗口，但光伏产线可借鉴性高，保留。</p>
+
+  <h3>4. Arm/Neuton.AI TinyML 预测性维护</h3>
+  <p><strong>来源链接：</strong><a href="https://www.arm.com/zh-tw/company/news/2025/07/predictive-maintenance-smart-factories">Arm - Predictive maintenance for smart factories</a></p>
+  <p><strong>应用场景：</strong>泵、压缩机等旋转设备的异常检测与故障预警。</p>
+  <p><strong>核心做法：</strong>在资源受限的微控制器上运行 TinyML 模型，实时处理振动、温度、压力等传感器数据，在故障前识别异常模式。</p>
+  <p><strong>光伏启发：</strong>对层压机真空泵、空压机、冷却水泵、焊接机风机、传送电机等关键设备，先做边缘异常分数就有价值。</p>
+  <p><strong>落地想法：</strong>选择 3 台真空泵或空压机，加装振动和温度采集，建立“正常运行基线 + 异常趋势告警 + 维修记录回填”的小闭环。</p>
+  <p><strong>开发难度：</strong>中等。传感器安装、数据清洗和阈值策略比模型本身更关键。</p>
+  <p><strong>预期收益：</strong>减少突发停线；降低过度保养；帮助设备工程师把经验固化为数据规则。</p>
+
+  <h3>5. PV-YOLOv12n 光伏缺陷检测</h3>
+  <p><strong>来源链接：</strong><a href="https://www.nature.com/articles/s41598-025-13956-7">Scientific Reports - Optimized YOLO based model for photovoltaic defect detection in electroluminescence images</a></p>
+  <p><strong>应用场景：</strong>EL 图像中的裂纹、星裂、黑芯、断栅、位移等缺陷检测，以及 RGB 光伏缺陷检测。</p>
+  <p><strong>核心做法：</strong>在 YOLOv12n 基础上加入 A2C2f 等改进模块，提升细粒度缺陷定位能力，并保持轻量参数量。论文报告在 PVEL-AD 和 Roboflow 数据集上 mAP@0.5 约 0.91，参数量约 2.6M。</p>
+  <p><strong>光伏启发：</strong>组件厂可把它作为轻量检测模型设计方向，尤其是小目标和弱对比缺陷；不建议直接照搬论文权重到现场。</p>
+  <p><strong>落地想法：</strong>用现有 EL 图片先做离线 benchmark：YOLOv8n/YOLO11n/Anomalib PatchCore/PV-YOLO 思路对比，指标包含漏检率、误报率、单图耗时、复判节省时间。</p>
+  <p><strong>开发难度：</strong>中等到高。取决于缺陷标注质量、图像一致性、是否要实时剔除。</p>
+  <p><strong>预期收益：</strong>形成自有 EL 缺陷模型评测体系，减少供应商算法黑盒依赖。</p>
+
+  <h3>6. Kiwa 与 Intertek 的光伏质量数据闭环启发</h3>
+  <p><strong>来源链接：</strong><a href="https://www.kiwa.com/us/en-us/about-kiwa/entities/kiwa-pi-berlin-usa/2025pvqualityreport/">Kiwa 2025 PV Module Manufacturing Quality Report</a>、<a href="https://www.intertekcea.com/cea-blog/how-to-make-the-right-inspection-decisions-for-solar-assets-from-the-factory-to-the-field">Intertek CEA - Factory to Field Inspection Decisions</a></p>
+  <p><strong>应用场景：</strong>工厂审核、生产监督、出货检验、现场 EL 测试和质量问题回溯。</p>
+  <p><strong>核心做法：</strong>Kiwa 强调基于工厂审核、生产监督、出货检验的数据总结制造质量风险；Intertek CEA 强调何时使用 EL 测试，以及打通现场与工厂检查数据的重要性。</p>
+  <p><strong>光伏启发：</strong>把现场返图、EL 复测、出货批次、物料批次、设备参数拉到同一张风险地图。</p>
+  <p><strong>落地想法：</strong>建设“客户现场问题反哺看板”：按客户、项目、组件 SN、工单、BOM 批次、EL 缺陷类型、工艺窗口展示风险聚类。</p>
+  <p><strong>开发难度：</strong>中等。难点是客户数据回传格式不统一，以及现场缺陷定义和工厂缺陷码的映射。</p>
+  <p><strong>预期收益：</strong>提高客户投诉响应速度；发现供应商批次、工艺窗口或设备漂移导致的系统性风险。</p>
+
+  <h2>三、今日 GitHub 开源项目推荐</h2>
+  <p class="meta">Star 与更新时间通过 GitHub API 于 2026-07-13 拉取；后续可能变化。</p>
+  <div class="table-wrap">
+    <table>
+      <thead>
+        <tr><th>项目</th><th>链接</th><th>简介</th><th>技术栈</th><th>Star</th><th>最近更新时间</th><th>适合借鉴点</th><th>是否适合二次开发</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Anomalib</td><td><a href="https://github.com/open-edge-platform/anomalib">open-edge-platform/anomalib</a></td><td>工业视觉异常检测库，含多种 SOTA 算法、实验管理和边缘推理能力。</td><td>Python、PyTorch、OpenVINO 生态</td><td>5,933</td><td>2026-07-12</td><td>少样本/无缺陷样本场景，可用于 EL/AOI 异常检测 baseline。</td><td>适合。建议从 PatchCore、PaDiM、EfficientAD 做产线图片 benchmark。</td></tr>
+        <tr><td>FiftyOne</td><td><a href="https://github.com/voxel51/fiftyone">voxel51/fiftyone</a></td><td>视觉数据集管理、筛选、标注质检和模型误差分析工具。</td><td>TypeScript、Python</td><td>10,894</td><td>2026-07-12</td><td>管理 EL/AOI 图片、缺陷标签、误报漏报样本。</td><td>适合。可作为内部标注复判和样本回流平台的底座。</td></tr>
+        <tr><td>Awesome Industrial Anomaly Detection</td><td><a href="https://github.com/M-3LAB/awesome-industrial-anomaly-detection">M-3LAB/awesome-industrial-anomaly-detection</a></td><td>工业异常/瑕疵检测论文和数据集列表，持续更新。</td><td>资料库</td><td>3,684</td><td>2026-07-13</td><td>找模型、数据集、评测指标，适合算法选型。</td><td>适合作为知识库，不是直接二开应用。</td></tr>
+        <tr><td>pv-vision</td><td><a href="https://github.com/hackingmaterials/pv-vision">hackingmaterials/pv-vision</a></td><td>面向光伏组件 EL 图像的分析工具，包含组件变换、单元分割、裂纹分割、缺陷电池识别等。</td><td>Jupyter Notebook、Python</td><td>57</td><td>2026-05-18</td><td>光伏 EL 图像预处理和 cell segmentation 思路贴近组件工厂。</td><td>适合小范围二开。工程化程度需自行增强。</td></tr>
+        <tr><td>PVEL-AD</td><td><a href="https://github.com/binyisu/PVEL-AD">binyisu/PVEL-AD</a></td><td>光伏电致发光异常检测数据集，包含 36,543 张近红外图像和多类缺陷。</td><td>Python、Dataset</td><td>157</td><td>2026-07-13</td><td>可用于预训练、算法评测、缺陷类别体系参考。</td><td>适合用于训练/评测，不是完整应用。</td></tr>
+        <tr><td>UCF-EL-Defect</td><td><a href="https://github.com/ucf-photovoltaics/UCF-EL-Defect">ucf-photovoltaics/UCF-EL-Defect</a></td><td>光伏 EL 图像语义分割模型脚本，源自 PV 缺陷检测定位论文。</td><td>Python、PyTorch</td><td>21</td><td>2026-07-09</td><td>可参考语义分割输出，比分类更适合定位隐裂区域。</td><td>可借鉴。代码较旧，需验证依赖和迁移成本。</td></tr>
+        <tr><td>AWS Predictive Maintenance</td><td><a href="https://github.com/awslabs/predictive-maintenance-using-machine-learning">awslabs/predictive-maintenance-using-machine-learning</a></td><td>用 SageMaker 和 NASA turbofan 数据集演示设备剩余寿命预测。</td><td>Python、SageMaker</td><td>110</td><td>2026-07-08</td><td>预测维护端到端流程模板。</td><td>可借鉴架构。现场需替换为真实设备传感器数据。</td></tr>
+        <tr><td>Ultralytics</td><td><a href="https://github.com/ultralytics/ultralytics">ultralytics/ultralytics</a></td><td>YOLO 系列目标检测、分割、分类、姿态、跟踪框架。</td><td>Python、PyTorch</td><td>59,410</td><td>2026-07-13</td><td>快速训练 EL/AOI 缺陷检测 baseline，部署资料多。</td><td>适合。注意工业现场需要严谨评测漏检率。</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2>四、结合光伏工厂的应用点子</h2>
+  <h3>点子 1：EL/AOI 缺陷样本回流与模型迭代平台</h3>
+  <p><strong>痛点：</strong>EL/AOI 误报、漏检和换型后模型退化，复判员确认结果没有沉淀到训练集。</p>
+  <p><strong>解决思路：</strong>把设备图片、模型结果、人工复判、缺陷码、工单和组件 SN 打通，自动生成“待训练样本池”。</p>
+  <p><strong>数据：</strong>EL 原图、AOI 图片、缺陷框/分割 mask、复判结果、产品型号、设备号、班次、工艺参数。</p>
+  <p><strong>技术方案：</strong>FiftyOne 管理样本；Anomalib/YOLO 做模型 baseline；PostgreSQL 存元数据；MinIO/S3 存图片；FastAPI 提供复判接口。</p>
+  <p><strong>复杂度：</strong>中高。<strong>收益：</strong>缩短模型迭代周期，降低误判停线，建立自有缺陷数据资产。</p>
+
+  <h3>点子 2：多模态大模型质检复核助手</h3>
+  <p><strong>痛点：</strong>低频缺陷、包装/标签/外观问题样本少，专用模型训练不经济。</p>
+  <p><strong>解决思路：</strong>将参考图、待检图和结构化检查标准输入多模态模型，输出 OK/NOK、缺陷原因和坐标；用于抽检和复判，不直接控制高速剔除。</p>
+  <p><strong>数据：</strong>工位图片、参考图、SOP 检查项、历史缺陷示例、MES 工单信息。</p>
+  <p><strong>技术方案：</strong>本地视觉模型或云端多模态模型；JSON schema 校验；人工确认界面；结果回写 QMS/MES。</p>
+  <p><strong>复杂度：</strong>中等。<strong>收益：</strong>一周内可做 MVP，适合新工位快速验证 AI 价值。</p>
+
+  <h3>点子 3：层压机/真空泵边缘预测维护</h3>
+  <p><strong>痛点：</strong>真空泵、空压机、冷却水泵突发异常会造成停线或批量质量风险，传统点检依赖人工经验。</p>
+  <p><strong>解决思路：</strong>用低成本振动、温度、电流传感器采集关键设备健康数据，建立正常基线和异常趋势告警。</p>
+  <p><strong>数据：</strong>振动 RMS/频谱、温度、电流、压力、启停状态、维修记录、设备报警。</p>
+  <p><strong>技术方案：</strong>边缘采集网关 + MQTT + 时序数据库 + 异常检测模型；初期用阈值和 Isolation Forest，后续试 TinyML。</p>
+  <p><strong>复杂度：</strong>中等。<strong>收益：</strong>减少突发停线，辅助设备维护计划从定期转向按状态。</p>
+
+  <h3>点子 4：客户现场问题到工厂批次的质量风险地图</h3>
+  <p><strong>痛点：</strong>客户现场 EL/热斑/功率衰减问题回传后，难以快速关联工厂工单、BOM 批次和设备参数。</p>
+  <p><strong>解决思路：</strong>建立“现场缺陷码 - 工厂缺陷码 - 组件 SN - 工单 - BOM - 工艺窗口”映射，自动聚类同批风险。</p>
+  <p><strong>数据：</strong>客户返图、现场 EL/红外图、组件 SN、出货批次、BOM 批次、EL 终检结果、IV 数据、层压参数。</p>
+  <p><strong>技术方案：</strong>质量数据仓库 + 缺陷码字典 + 聚类分析 + 风险看板；先从重点客户项目开始。</p>
+  <p><strong>复杂度：</strong>中高。<strong>收益：</strong>缩短客诉分析时间，提升召回/隔离决策准确性。</p>
+
+  <h3>点子 5：能源与良率联动看板</h3>
+  <p><strong>痛点：</strong>能耗优化常只看总电量，不知道节能措施是否影响良率、返修率或节拍。</p>
+  <p><strong>解决思路：</strong>把车间电表、空压、温湿度、设备状态和质量指标按工单/小时对齐，识别“高能耗低良率”的工艺段。</p>
+  <p><strong>数据：</strong>电表、气耗、温湿度、设备 OEE、产量、良率、返修、报废、工艺参数。</p>
+  <p><strong>技术方案：</strong>SCADA/MES 数据接入 + 时序库 + BI 看板 + 异常规则；后续做能耗预测。</p>
+  <p><strong>复杂度：</strong>中等。<strong>收益：</strong>避免只降能耗不看质量，支持精益改善和碳足迹核算。</p>
+
+  <h2>五、今日最值得尝试的一个小项目</h2>
+  <h3>EL/AOI 缺陷样本回流 MVP</h3>
+  <p><strong>推荐原因：</strong>今天的案例共同指向一个结论：光伏工厂做 AI 质检，最先要补的是数据闭环。相比直接追求高精度模型，先把图片、复判、缺陷码和工单关联起来，更容易产生持续收益。</p>
+  <p><strong>MVP：</strong>上传或自动导入一批 EL/AOI 图片；绑定组件 SN、工单、设备号、产品型号；复判员标记 OK/NOK、缺陷类型、误报/漏检；系统生成按缺陷、型号、设备、班次筛选的数据集；导出 YOLO 或 Anomalib 可用的训练/评测目录。</p>
+  <p><strong>所需数据：</strong>最近 1-2 周 EL/AOI 图片 1,000-5,000 张；MES 工单和组件 SN 映射；现有设备判定结果；人工复判结果，初期 200-500 张也可启动。</p>
+  <p><strong>技术步骤：</strong></p>
+  <ol>
+    <li>用 MinIO 或本地文件夹存图，PostgreSQL/SQLite 存元数据。</li>
+    <li>用 FastAPI 建图片列表、筛选、复判、导出接口。</li>
+    <li>用简单 Web 页面做复判：图片、模型结果、缺陷码、备注。</li>
+    <li>接入 FiftyOne 或自建导出脚本，形成训练集版本。</li>
+    <li>选 1 个缺陷类别跑 Anomalib/YOLO baseline，输出误报漏报清单。</li>
+  </ol>
+  <p><strong>周期：</strong>3-5 天做离线导入 + 复判页面 + CSV/JSON 导出；1-2 周接入一台设备图片目录；3-4 周接入模型训练和评测报告。</p>
+  <p><strong>扩展：</strong>增加多模态大模型复核；建立模型版本、训练集版本、上线记录；与 MES/QMS 异常单联动；做“缺陷热力图 + 批次风险地图”。</p>
+
+  <h2>今日信息源</h2>
+  <ul>
+    <li><a href="https://aws.amazon.com/blogs/industries/implement-zero-training-visual-defect-detection-in-manufacturing-with-amazon-nova-pro/">AWS：Amazon Nova Pro 零训练视觉缺陷检测</a></li>
+    <li><a href="https://aws.amazon.com/solutions/case-studies/bmw-vsas-case-study/">AWS：BMW VSAS 视觉与声音分析服务</a></li>
+    <li><a href="https://www.lusterinc.com/%E8%B5%B0%E8%BF%9B%E5%85%89%E4%BC%8F%E9%BE%99%E5%A4%B4%EF%BC%9A%E4%B8%80%E5%9D%97%E7%94%B5%E6%B1%A0%E7%89%87%E7%9A%84%E3%80%8Cai%E3%80%8D%E6%99%BA%E6%A3%80%E4%B9%8B%E6%97%85/">凌云光：光伏电池片 AI 智检</a></li>
+    <li><a href="https://www.arm.com/zh-tw/company/news/2025/07/predictive-maintenance-smart-factories">Arm：TinyML 预测性维护</a></li>
+    <li><a href="https://www.nature.com/articles/s41598-025-13956-7">Scientific Reports：PV-YOLOv12n 光伏缺陷检测</a></li>
+    <li><a href="https://www.kiwa.com/us/en-us/about-kiwa/entities/kiwa-pi-berlin-usa/2025pvqualityreport/">Kiwa：2025 PV Module Manufacturing Quality Report</a></li>
+    <li><a href="https://www.intertekcea.com/cea-blog/how-to-make-the-right-inspection-decisions-for-solar-assets-from-the-factory-to-the-field">Intertek CEA：工厂到现场的光伏检查决策</a></li>
+    <li><a href="https://www.rockwellautomation.com.cn/company/news/case-studies/photovoltaic-mom-system.html">Rockwell Automation：光伏辅材 MOM/SCADA 透明工厂</a></li>
+    <li><a href="https://github.com/open-edge-platform/anomalib">GitHub：Anomalib</a></li>
+    <li><a href="https://github.com/voxel51/fiftyone">GitHub：FiftyOne</a></li>
+    <li><a href="https://github.com/binyisu/PVEL-AD">GitHub：PVEL-AD</a></li>
+  </ul>
+</main>
+</body>
+</html>
