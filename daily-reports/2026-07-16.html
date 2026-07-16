@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="2026-07-16 数字化、智能制造与光伏工厂应用灵感日报">
+  <title>数字化/智能化应用灵感日报｜2026-07-16</title>
+  <style>
+    :root { color-scheme: light; --ink:#1f2937; --muted:#64748b; --line:#dbe3ea; --accent:#0f766e; --head:#eef6f5; --bg:#f6f8fb; }
+    * { box-sizing: border-box; }
+    body { margin:0; color:var(--ink); background:var(--bg); font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",Arial,sans-serif; line-height:1.75; }
+    main { max-width:960px; margin:0 auto; padding:36px 28px 64px; background:#fff; min-height:100vh; box-shadow:0 0 24px rgba(15,23,42,.05); }
+    .nav { margin-bottom:22px; font-size:14px; }
+    h1 { margin:0 0 12px; font-size:30px; line-height:1.3; color:#0f172a; }
+    h2 { margin:38px 0 16px; padding-bottom:8px; font-size:24px; border-bottom:2px solid var(--accent); color:#0f172a; }
+    h3 { margin:28px 0 10px; font-size:19px; color:#134e4a; }
+    p { margin:10px 0; }
+    blockquote { margin:16px 0 24px; padding:12px 16px; color:#475569; background:#f1f5f9; border-left:4px solid #14b8a6; }
+    blockquote p { margin:0; }
+    a { color:var(--accent); text-decoration-thickness:1px; text-underline-offset:2px; overflow-wrap:anywhere; }
+    strong { color:#0f172a; }
+    ul, ol { padding-left:24px; }
+    li + li { margin-top:6px; }
+    table { display:block; width:100%; overflow-x:auto; border-collapse:collapse; margin:16px 0 24px; font-size:14px; }
+    th, td { min-width:92px; padding:10px 12px; border:1px solid var(--line); text-align:left; vertical-align:top; }
+    th { background:var(--head); color:#134e4a; font-weight:700; white-space:nowrap; }
+    tr:nth-child(even) td { background:#fbfdfe; }
+    code { padding:2px 5px; border-radius:4px; background:#f1f5f9; font-family:Consolas,monospace; font-size:.92em; }
+    @media (max-width:640px) {
+      main { padding:22px 15px 44px; box-shadow:none; }
+      h1 { font-size:25px; }
+      h2 { margin-top:30px; font-size:21px; }
+      h3 { font-size:18px; }
+      table { font-size:13px; }
+      th, td { padding:8px 9px; }
+    }
+    @media print { body { background:#fff; } main { max-width:none; padding:0; box-shadow:none; } a { color:#000; } }
+  </style>
+</head>
+<body>
+  <main>
+    <nav class="nav"><a href="https://fanxianfang.github.io/daily-reports/">← 返回日报目录</a></nav>
+<h1>数字化/智能化应用灵感日报｜2026-07-16</h1>
+<blockquote>
+<p>今日聚焦：动态排产、光伏 IT/OT 融合、供应链风险预警、可解释预测质量、OT 网络可视化、能耗与碳排协同。<br />
+时效说明：优先检索 2025-07-16 至 2026-07-16 的公开内容。Bayer 案例发布于 2025-06-20，略超一年但仍具实操价值；铸造预测质量案例为 2026 年论文中的真实工厂验证，并非商业化产品。企业与供应商披露收益均需以本厂基线复核。</p>
+</blockquote>
+<h2>一、今日精选案例总览</h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: right;">序号</th>
+<th>案例名称</th>
+<th>行业</th>
+<th>来源</th>
+<th>关键词</th>
+<th>推荐等级</th>
+<th>简要价值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: right;">1</td>
+<td>天合光能“5G-A＋IT/OT＋数字孪生”工厂闭环</td>
+<td>光伏制造</td>
+<td><a href="https://www.zte.com.cn/global/about/news/China-Unicom-ZTE-and-TrinaSolar-set-a-new-benchmark-for-green-energy-digitalization.html">ZTE，2025-11-19</a></td>
+<td>5G-A、PLC、AGV、AI 视觉、参数优化</td>
+<td>A+</td>
+<td>将网络、设备、物流、质检和孪生优化连成闭环；披露追溯效率提升 88%、物流效率提升 80%、报废率下降 15%。</td>
+</tr>
+<tr>
+<td style="text-align: right;">2</td>
+<td>饮料工厂实时数据驱动的动态排产</td>
+<td>食品饮料</td>
+<td><a href="https://www.microsoft.com/en/customers/story/26648-sight-machine-microsoft-foundry">Microsoft/Sight Machine，2026-06-03</a></td>
+<td>MIP、动态重排、换型、实时状态</td>
+<td>A+</td>
+<td>不再用静态平均节拍排产；设备降速或停机时自动重算，换型停机减少近 80%。</td>
+</tr>
+<tr>
+<td style="text-align: right;">3</td>
+<td>Hitachi 用生成式 AI 推断供应商真实生产地点</td>
+<td>综合制造/供应链</td>
+<td><a href="https://www.hitachi.com/en/press/articles/2025/03/0314/">Hitachi，2025-03-14</a></td>
+<td>供应商风险、地理编码、公开数据、灾害</td>
+<td>A</td>
+<td>从合同、官网、ISO 和地图信息推断工厂经纬度，内部验证准确率超过 85%，可叠加洪水、地震和地缘风险。</td>
+</tr>
+<tr>
+<td style="text-align: right;">4</td>
+<td>Bayer 全球工厂 OT 资产与通信可视化</td>
+<td>制药制造</td>
+<td><a href="https://uk.nttdata.com/insights/case-studies/bayer-ag">NTT DATA，2025-06-20</a></td>
+<td>被动发现、资产清单、异常通信、SOC</td>
+<td>A</td>
+<td>先看清“谁与谁通信”，再做漏洞和异常优先级；覆盖制药事业部 15 个主要站点。</td>
+</tr>
+<tr>
+<td style="text-align: right;">5</td>
+<td>真实铸造工厂的可解释预测质量</td>
+<td>汽车零部件/铸造</td>
+<td><a href="https://arxiv.org/abs/2603.11666">arXiv，2026-03-12</a></td>
+<td>工艺参数、质量预测、维护日志、特征解释</td>
+<td>A-</td>
+<td>将两台制芯机参数与缺陷、维护记录关联，提前识别高风险工艺组合；方法可迁移到层压与焊接。</td>
+</tr>
+<tr>
+<td style="text-align: right;">6</td>
+<td>Rockwell 新加坡高混低量数字化工厂</td>
+<td>工业自动化</td>
+<td><a href="https://www.weforum.org/press/2026/06/new-global-lighthouse-sites-demonstrate-how-ai-is-rewiring-manufacturing-and-supply-chains/">世界经济论坛，2026-06</a></td>
+<td>1000+ SKU、智能维护、AI 质量、换型</td>
+<td>A-</td>
+<td>面对每年 2 万余次换型，以 50 多项数字/AI 应用提升人均产出 43%、缺陷下降 35%。</td>
+</tr>
+<tr>
+<td style="text-align: right;">7</td>
+<td>DCM Shriram AI 工艺控制与维护经理</td>
+<td>化工/高耗能制造</td>
+<td><a href="https://www.weforum.org/press/2026/06/new-global-lighthouse-sites-demonstrate-how-ai-is-rewiring-manufacturing-and-supply-chains/">世界经济论坛，2026-06</a></td>
+<td>能耗优化、工艺控制、维护智能体、碳</td>
+<td>A-</td>
+<td>把产能、成本和碳排放放进同一改善账本；电力成本下降 32%、材料成本下降 15%、CO₂ 下降 14%。</td>
+</tr>
+</tbody>
+</table>
+<h2>二、重点案例详解</h2>
+<h3>1. 天合光能：从“设备联网”走向 IT/OT 与优化闭环</h3>
+<ul>
+<li><strong>来源链接</strong>：<a href="https://www.zte.com.cn/global/about/news/China-Unicom-ZTE-and-TrinaSolar-set-a-new-benchmark-for-green-energy-digitalization.html">ZTE 官方案例，2025-11-19</a>。收益为联合方案提供方披露，未见独立审计。</li>
+<li><strong>所属行业</strong>：光伏制造、光伏电站运营。</li>
+<li><strong>应用场景</strong>：PLC、AGV、机器视觉和追溯系统各自成岛，产品变化后工艺参数调整慢，物流与质量事件难实时联动。</li>
+<li><strong>核心做法</strong>：以 5G-A 专网连接 PLC 控制、AGV 物流和 AI 视觉；数字孪生承接虚实联动、方案验证和动态工艺参数优化；统一数据回传、分析与执行。</li>
+<li><strong>使用技术</strong>：5G-A 专网、边缘计算、PLC/工业协议、AGV 调度、AI 视觉、数字孪生、动态优化。</li>
+<li><strong>可借鉴点</strong>：不是所有设备都要无线化。应按“移动设备、布线困难、高清视频、低时延控制”分层选择 5G、工业以太网或 Wi-Fi，并以业务事件模型而非网络覆盖率验收。</li>
+<li><strong>光伏工厂落地想法</strong>：选层压前缓存区做小闭环：AGV 到位、工单/版型、叠层 EL 结果和层压机可用状态进入统一事件流，系统推荐入炉顺序并留存实际执行偏差。</li>
+<li><strong>开发难度评估</strong>：中高；单区域验证为中等，全厂专网与设备改造为高。</li>
+<li><strong>预期收益</strong>：来源披露追溯效率提升 88%、物流效率提升 80%、报废率下降 15%。本厂建议以追溯查询时间、AGV 等待分钟、错送率、参数变更确认时长和报废成本验收。</li>
+</ul>
+<h3>2. 饮料工厂：实时数据触发动态重排</h3>
+<ul>
+<li><strong>来源链接</strong>：<a href="https://www.microsoft.com/en/customers/story/26648-sight-machine-microsoft-foundry">Microsoft Customer Story，2026-06-03</a>。客户匿名，数据来自供应商案例。</li>
+<li><strong>所属行业</strong>：饮料制造；方法适用于高换型、多约束生产。</li>
+<li><strong>应用场景</strong>：计划每周重排 10–15 次，依赖多人会议和老师傅经验；实际线速、换型、爬坡和清洗时间不断变化，静态标准值很快失真。</li>
+<li><strong>核心做法</strong>：Sight Machine 先提供每 SKU 实际线速、换型时间、爬坡时长和实时状态；OptiMind 将自然语言约束转成混合整数规划（MIP）代码；设备降速或离线时触发重新求解，并支持停机、需求变化的 what-if 模拟。</li>
+<li><strong>使用技术</strong>：制造语义层、实时事件、MIP/约束优化、小语言模型生成模型代码、预测分析、人工审批。</li>
+<li><strong>可借鉴点</strong>：大模型只协助表达约束，最终排产仍由可验证的数学模型求解；必须展示约束、目标函数、不可行原因和与原计划的差异。</li>
+<li><strong>光伏工厂落地想法</strong>：把组件版型、玻璃/胶膜批次、焊机兼容性、层压配方、换型清线、交期和设备停机窗口编码为约束，先给计划员“建议序列＋解释”，不自动写回 MES。</li>
+<li><strong>开发难度评估</strong>：中等。数据准备和约束治理比求解器本身更难。</li>
+<li><strong>预期收益</strong>：案例披露换型停机减少近 80%、爬坡延迟减少近 60%、CIP 停机减少近 90%。组件厂应以计划编制时间、换型总分钟、紧急插单影响、准交率和计划执行稳定性评估。</li>
+</ul>
+<h3>3. Hitachi：补齐多级供应链的“真实工厂地点”</h3>
+<ul>
+<li><strong>来源链接</strong>：<a href="https://www.hitachi.com/en/press/articles/2025/03/0314/">Hitachi 官方新闻稿，2025-03-14</a>。这是内部验证技术，社会化应用仍在推进。</li>
+<li><strong>所属行业</strong>：综合制造、采购与供应链风险。</li>
+<li><strong>应用场景</strong>：ERP 通常只有一级供应商公司和注册地址，缺少真正生产玻璃、胶膜、焊带、接线盒的工厂位置，因此灾害发生时难判断哪些物料和订单受影响。</li>
+<li><strong>核心做法</strong>：把合同中的物料和供应商信息标准化为产品代码，再从官网、ISO 认证、地图等公开数据抽取候选生产地点；通过中间清单校验一致性，推断到经纬度，并叠加地震、洪水、疫情或地缘风险。</li>
+<li><strong>使用技术</strong>：生成式 AI 信息抽取、实体解析、产品分类、地理编码、知识关联、风险图层、人工复核。</li>
+<li><strong>可借鉴点</strong>：推断结果必须标注证据、置信度和最后核验时间；低置信度进入采购人员复核，不能自动替换主数据。</li>
+<li><strong>光伏工厂落地想法</strong>：先覆盖 A 类关键物料和单一来源供应商，建立“供应商—实际工厂—物料—在途/库存—订单”的影响图，外部风险命中后自动计算安全库存可撑天数。</li>
+<li><strong>开发难度评估</strong>：中等；多级供应链和全球地址消歧为中高。</li>
+<li><strong>预期收益</strong>：Hitachi 内部多领域验证的地点推断准确率超过 85%。本厂更应考核已确认工厂覆盖率、风险命中到影响清单的时间、替代料响应时间和断料避免次数。</li>
+</ul>
+<h3>4. Bayer：用被动流量发现建立 OT 安全底图</h3>
+<ul>
+<li><strong>来源链接</strong>：<a href="https://uk.nttdata.com/insights/case-studies/bayer-ag">NTT DATA 客户案例，2025-06-20</a>，略超一年窗口且未披露量化 ROI。</li>
+<li><strong>所属行业</strong>：制药制造、关键基础设施安全。</li>
+<li><strong>应用场景</strong>：企业知道大致设备数量，却不知道 PLC、HMI、工程站和服务器之间具体如何通信，也难统一 15 个主要站点的漏洞和异常处置流程。</li>
+<li><strong>核心做法</strong>：先在一个站点 PoC；通过 Nozomi Guardian 被动跟踪 OT/IoT 资产、通信与行为基线，按优先级识别异常和漏洞；调低误报后接入集中控制台和 SOC，再推广到各站点。</li>
+<li><strong>使用技术</strong>：网络 TAP/SPAN、工业协议识别、资产指纹、行为基线、异常检测、威胁情报、SIEM/SOC 集成。</li>
+<li><strong>可借鉴点</strong>：组件厂不应直接在老旧 PLC 上安装代理或主动扫描。第一阶段只读采流，先验证不会影响生产；先治理未知资产、跨区通信和远程维护通道。</li>
+<li><strong>光伏工厂落地想法</strong>：对一条组件线做 14 天被动盘点，输出设备清单、通信矩阵、外联目标、未经批准的工程站和跨 VLAN 流量；由设备、网络和安全三方共同确认白名单。</li>
+<li><strong>开发难度评估</strong>：中等；全厂分区、SOC 和响应流程为中高。</li>
+<li><strong>预期收益</strong>：来源仅确认减少人工排障和取证、加快漏洞响应，未给出百分比。建议用未知资产减少率、异常流量闭环时长、远程访问合规率和误报率验收。</li>
+</ul>
+<h3>5. 真实铸造工厂：工艺参数到缺陷风险的可解释预测</h3>
+<ul>
+<li><strong>来源链接</strong>：<a href="https://arxiv.org/abs/2603.11666">arXiv 论文，2026-03-12</a>。论文摘要未公开足够的模型细节和完整指标，结论需在正式全文中复核。</li>
+<li><strong>所属行业</strong>：重型车辆动力总成铸件、制芯工艺。</li>
+<li><strong>应用场景</strong>：缺陷在后段检出时损失已经发生；设备参数、环境、生产批次和维护状态共同影响质量，人工难从多变量中稳定识别关键组合。</li>
+<li><strong>核心做法</strong>：关联两台制芯机的过程参数、缺陷结果和维护日志，训练质量风险模型，并识别与缺陷相关的关键参数，用于生产和质量团队提前干预。</li>
+<li><strong>使用技术</strong>：特征工程、监督学习、分类评估、参数重要性/可解释性、维护事件关联。</li>
+<li><strong>可借鉴点</strong>：先做“风险提示＋参数证据”，不要直接闭环改写 PLC；同时按设备、产品、班次和时间切分验证，避免把设备编号或日期泄漏当成预测能力。</li>
+<li><strong>光伏工厂落地想法</strong>：以层压气泡/脱层或焊接虚焊为目标，关联配方、真空曲线、温度均匀性、环境、材料批次和维护事件，输出高风险批次及前三个原因。</li>
+<li><strong>开发难度评估</strong>：中等；自动参数推荐与闭环控制为高。</li>
+<li><strong>预期收益</strong>：论文仅报告取得良好准确率，未披露可直接引用的 ROI。组件厂应以提前预警召回率、误报率、首检良率、报废/返修成本和参数干预有效率验收。</li>
+</ul>
+<h3>6. Rockwell 新加坡：用高频换型场景检验数字化价值</h3>
+<ul>
+<li><strong>来源链接</strong>：<a href="https://www.weforum.org/press/2026/06/new-global-lighthouse-sites-demonstrate-how-ai-is-rewiring-manufacturing-and-supply-chains/">世界经济论坛全球灯塔网络，2026-06</a>。页面只给出组合成果，未拆分单项用例贡献。</li>
+<li><strong>所属行业</strong>：工业自动化设备制造。</li>
+<li><strong>应用场景</strong>：1,000 多个 SKU、每年 20,000 多次换型，高混低量导致质量波动、柔性不足和老师傅知识依赖。</li>
+<li><strong>核心做法</strong>：规模化部署 50 多项数字与 AI 应用，包括柔性自动化、AI 质量控制和智能维护，并同时改造人员上岗与知识传递流程。</li>
+<li><strong>使用技术</strong>：柔性自动化、AI 质检、智能维护、数字工作流、技能/知识数字化。</li>
+<li><strong>可借鉴点</strong>：组件厂新品和定制版型增多后，应把换型频率、首件失败、参数切换和人员熟练度一起管理，而非只看设备 OEE。</li>
+<li><strong>光伏工厂落地想法</strong>：建立“版型复杂度分数”，按 BOM 差异、设备兼容、参数切换、首件历史和人员资质预测换型风险，为计划员安排更合适的时段和班组。</li>
+<li><strong>开发难度评估</strong>：中等。</li>
+<li><strong>预期收益</strong>：案例整体人均小时产出提升 43%、缺陷下降 35%、胜任周期缩短 67%；需注意这些是多项措施叠加结果。</li>
+</ul>
+<h3>7. DCM Shriram：把能源、材料和碳纳入工艺优化</h3>
+<ul>
+<li><strong>来源链接</strong>：<a href="https://www.weforum.org/press/2026/06/new-global-lighthouse-sites-demonstrate-how-ai-is-rewiring-manufacturing-and-supply-chains/">世界经济论坛全球灯塔网络，2026-06</a>。组合用例细节有限。</li>
+<li><strong>所属行业</strong>：氯碱化工、高耗能流程制造。</li>
+<li><strong>应用场景</strong>：电力占运营成本大头，单纯追求产量或单机节能可能牺牲质量、材料或整体利润。</li>
+<li><strong>核心做法</strong>：部署 45 项先进应用，包括 AI 工艺控制和生成式 AI 维护经理，同时优化电力、材料、维护和排放表现。</li>
+<li><strong>使用技术</strong>：工艺高级控制、能耗预测、约束优化、维护知识/智能体、碳排核算。</li>
+<li><strong>可借鉴点</strong>：目标函数至少同时包含产量、质量损失、峰谷电价、材料报废和碳排；关键建议保留安全/质量硬约束。</li>
+<li><strong>光伏工厂落地想法</strong>：从层压机群做“能质协同排程”：结合分时电价、配方时长、待机/预热耗能、交期和质量风险，建议开机组合与生产顺序。</li>
+<li><strong>开发难度评估</strong>：中高；建议模式为中等，自动控制为高。</li>
+<li><strong>预期收益</strong>：案例整体 EBITDA 提升 11 个百分点、电力成本下降 32%、材料成本下降 15%、CO₂ 下降 14%。组件厂应核算每块组件综合制造成本和每瓦时碳排，避免只优化电费。</li>
+</ul>
+<h2>三、今日 GitHub 开源项目推荐</h2>
+<blockquote>
+<p>Star 与最近更新时间于 2026-07-16（北京时间）通过 GitHub API 核验；时间采用仓库 <code>pushed_at</code>，会持续变化。许可证仅为快速提示，商用前仍需复核依赖和部署方式。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th>链接与简介</th>
+<th>技术栈</th>
+<th style="text-align: right;">Star 数量</th>
+<th>最近更新时间</th>
+<th>适合借鉴点</th>
+<th>是否适合二次开发</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OR-Tools</td>
+<td><a href="https://github.com/google/or-tools">google/or-tools</a>：排产、路径和约束求解工具集</td>
+<td>C++/Python、CP-SAT/MIP、Apache-2.0</td>
+<td style="text-align: right;">13,778</td>
+<td>2026-07-16</td>
+<td>编码版型兼容、换型、交期、设备能力和维护窗口，做可解释排产器</td>
+<td><strong>适合</strong>；成熟且许可证友好，先做建议模式</td>
+</tr>
+<tr>
+<td>SHAP</td>
+<td><a href="https://github.com/shap/shap">shap/shap</a>：解释机器学习模型输出</td>
+<td>Python/Jupyter、Tree/Deep/Kernel SHAP、MIT</td>
+<td style="text-align: right;">25,616</td>
+<td>2026-07-16</td>
+<td>给每批层压/焊接质量风险展示参数贡献，支持工程师复核</td>
+<td><strong>适合</strong>；解释不等于因果，需结合工艺试验</td>
+</tr>
+<tr>
+<td>PyOD</td>
+<td><a href="https://github.com/yzhao062/pyod">yzhao062/pyod</a>：覆盖表格、时序等多类异常检测</td>
+<td>Python、60+ 检测器、BSD-2-Clause</td>
+<td style="text-align: right;">9,915</td>
+<td>2026-06-17</td>
+<td>无足够故障标签时，先发现真空曲线、能耗或设备行为偏离</td>
+<td><strong>适合 PoC</strong>；必须按版型/工况分组，避免正常切换被误报</td>
+</tr>
+<tr>
+<td>Wazuh</td>
+<td><a href="https://github.com/wazuh/wazuh">wazuh/wazuh</a>：开源 XDR/SIEM 安全平台</td>
+<td>C++/Python、Agent/SIEM；许可证需复核</td>
+<td style="text-align: right;">16,129</td>
+<td>2026-07-16</td>
+<td>汇总工程站、服务器和网关日志，建立远程登录、恶意文件与配置变更告警</td>
+<td><strong>有条件适合</strong>；更偏端点/IT，不能替代 OT 协议被动资产发现</td>
+</tr>
+<tr>
+<td>PyPSA</td>
+<td><a href="https://github.com/PyPSA/PyPSA">PyPSA/PyPSA</a>：电力系统建模与优化</td>
+<td>Python、线性优化、MIT</td>
+<td style="text-align: right;">2,064</td>
+<td>2026-07-15</td>
+<td>模拟厂内光伏、储能、负荷和分时电价的协同调度</td>
+<td><strong>适合能源团队</strong>；生产排程仍需另建约束层</td>
+</tr>
+<tr>
+<td>Zenoh</td>
+<td><a href="https://github.com/eclipse-zenoh/zenoh">eclipse-zenoh/zenoh</a>：轻量数据发布/订阅、查询与存储协议</td>
+<td>Rust/C/C++/Python；许可证需复核</td>
+<td style="text-align: right;">2,984</td>
+<td>2026-07-16</td>
+<td>为边缘设备、AGV 和中心平台构建低带宽事件总线，支持断连与分布式部署</td>
+<td><strong>有条件适合</strong>；需先验证工业协议网关、可靠性和运维能力</td>
+</tr>
+</tbody>
+</table>
+<h2>四、结合光伏工厂的应用点子</h2>
+<h3>点子 1：版型换型序列优化器</h3>
+<ul>
+<li><strong>痛点</strong>：计划主要按交期排，忽略焊机兼容、胶膜/玻璃切换、层压配方、清线和首件风险，导致换型分钟数和在制等待过高。</li>
+<li><strong>解决思路</strong>：将硬约束与可量化惩罚写入求解器，每 30–60 分钟依据设备状态和缺料重算，输出建议序列、预计收益和变更原因。</li>
+<li><strong>数据</strong>：订单/交期、BOM 与版型、设备能力矩阵、历史线速、换型/爬坡时间、库存齐套、停机计划、班组资质。</li>
+<li><strong>技术方案</strong>：OR-Tools CP-SAT + PostgreSQL + FastAPI + 甘特图；大模型仅把计划员补充规则转成待审核约束草稿。</li>
+<li><strong>复杂度</strong>：中等。</li>
+<li><strong>收益</strong>：减少换型和人工排产时间，提高计划稳定性、产能与准交率。</li>
+</ul>
+<h3>点子 2：层压质量风险“参数证据卡”</h3>
+<ul>
+<li><strong>痛点</strong>：气泡、脱层等问题往往在后段发现，参数分析靠人工拉多套曲线，且模型黑盒难被工艺接受。</li>
+<li><strong>解决思路</strong>：按批次预测风险，并展示温度、真空、配方、环境、材料与维护事件对本次风险的贡献；只提示检查与处置，不自动改参数。</li>
+<li><strong>数据</strong>：多点温度/真空曲线、配方、版型、材料批次、环境、报警/维护、EL/外观与可靠性结果。</li>
+<li><strong>技术方案</strong>：特征库 + LightGBM/XGBoost + SHAP + 数据漂移监控；按时间和设备做外推验证。</li>
+<li><strong>复杂度</strong>：中等。</li>
+<li><strong>收益</strong>：提前拦截高风险批次，缩短根因定位，降低返修和报废成本。</li>
+</ul>
+<h3>点子 3：A 类物料供应风险地图</h3>
+<ul>
+<li><strong>痛点</strong>：采购主数据只有供应商注册地址，灾害或物流中断发生后，难快速映射到实际工厂、物料、库存和受影响订单。</li>
+<li><strong>解决思路</strong>：公开信息推断实际生产地，采购确认后形成可信坐标；风险事件命中时计算库存可撑天数和替代方案。</li>
+<li><strong>数据</strong>：供应商/工厂、物料与 BOM、库存/在途、订单、交期、替代料认证、公开认证/官网/地图与灾害数据。</li>
+<li><strong>技术方案</strong>：实体解析 + 地理编码 + PostGIS + 证据/置信度工作流 + 风险事件规则。</li>
+<li><strong>复杂度</strong>：中等。</li>
+<li><strong>收益</strong>：把风险研判从数天缩短到小时级，降低断料和紧急空运概率。</li>
+</ul>
+<h3>点子 4：组件线 OT 通信白名单与漂移雷达</h3>
+<ul>
+<li><strong>痛点</strong>：PLC、HMI、相机、机器人和远程维护主机长期叠加，资产清单不全、跨区通信不透明。</li>
+<li><strong>解决思路</strong>：在不主动扫描设备的前提下采集镜像流量，形成资产和通信基线；新设备、新外联、异常端口或工程站访问触发复核。</li>
+<li><strong>数据</strong>：网络流元数据、MAC/IP、工业协议、设备厂商/型号、VLAN、远程访问、变更工单和处置结果。</li>
+<li><strong>技术方案</strong>：TAP/SPAN + 被动协议识别 + 通信图谱 + SIEM/Wazuh 日志关联；先观测后告警。</li>
+<li><strong>复杂度</strong>：中等。</li>
+<li><strong>收益</strong>：补齐资产底图，减少未授权接入和排障时间，支撑网络分区与应急响应。</li>
+</ul>
+<h3>点子 5：层压机群“电费—质量—交期”协同调度</h3>
+<ul>
+<li><strong>痛点</strong>：只按峰谷电价延后生产可能造成交期或质量风险；只追产量又忽略预热、待机和低负载能耗。</li>
+<li><strong>解决思路</strong>：以综合制造成本最小为目标，联合考虑电价、设备效率、配方、待机/预热、交期和质量风险，输出次日开机与订单分配建议。</li>
+<li><strong>数据</strong>：分时电价、设备功率曲线、订单/交期、配方、版型、设备状态、质量风险、厂内光伏/储能预测。</li>
+<li><strong>技术方案</strong>：OR-Tools/PyPSA + 能耗预测 + 约束优化 + 情景对比；关键订单和工艺窗口设为硬约束。</li>
+<li><strong>复杂度</strong>：中高。</li>
+<li><strong>收益</strong>：降低单块电耗与峰段费用，同时避免以牺牲良率或准交率换节能。</li>
+</ul>
+<h2>五、今日最值得尝试的一个小项目</h2>
+<h3>项目名称</h3>
+<p>一条组件线的“版型换型序列优化器”MVP</p>
+<h3>推荐原因</h3>
+<p>它不需要新增传感器，也不要求先训练 AI 模型。订单、版型、设备能力和历史换型记录通常已经存在；用可解释约束求解先给计划员建议，风险可控、收益可在两周内用“换型分钟和计划稳定性”直接验证。动态排产也是把工厂实时数据转成执行决策的关键入口。</p>
+<h3>MVP 范围</h3>
+<ul>
+<li>仅覆盖 1 条组件线、未来 24 小时、5–10 种常见版型。</li>
+<li>只纳入订单交期、版型兼容、物料齐套、换型时间、设备停机窗口五类约束。</li>
+<li>输出推荐顺序、预计完工时间、换型总分钟、逾期风险及相对人工计划的差异。</li>
+<li>计划员必须确认后才导出；不自动回写 MES，不自动下发设备参数。</li>
+</ul>
+<h3>所需数据</h3>
+<ul>
+<li>未来 24–48 小时工单、数量、优先级和交期。</li>
+<li>版型/BOM、目标线速、设备能力与禁配关系。</li>
+<li>最近 4–8 周真实换型起止、首件通过和爬坡时间。</li>
+<li>物料齐套时间、计划停机和可用班次。</li>
+<li>当前计划及实际完成记录，用作对照基线。</li>
+</ul>
+<h3>实施步骤</h3>
+<ol>
+<li><strong>第 1–2 天：定义边界。</strong> 与计划、工艺、生产确认硬约束和三项主要目标：逾期、换型分钟、计划扰动。</li>
+<li><strong>第 3–4 天：整理换型矩阵。</strong> 从历史记录估算“版型 A→B”的换型与爬坡时间；样本不足时标注为人工估计。</li>
+<li><strong>第 5–6 天：建立求解模型。</strong> 用 OR-Tools CP-SAT 编码订单、兼容、物料、停机和顺序依赖时间，保留不可行原因日志。</li>
+<li><strong>第 7 天：做轻量页面。</strong> 显示人工计划与优化计划的甘特图、KPI 对比、约束和调整理由。</li>
+<li><strong>第 8–9 天：历史回放。</strong> 选 10 个真实生产日回放，禁止使用当时未知的后验数据，检查收益与不可行情况。</li>
+<li><strong>第 10 天：影子运行。</strong> 计划员照常排产，系统同步给建议但不执行；记录采纳/拒绝原因。</li>
+</ol>
+<h3>周期与验收</h3>
+<ul>
+<li><strong>周期</strong>：2 周；1 名后端/算法开发 + 1 名计划员 + 工艺/设备接口人员兼职支持。</li>
+<li><strong>验收门槛</strong>：硬约束违规为 0；10 天回放中至少 8 天可行；建议生成不超过 60 秒；换型＋爬坡预计分钟较人工计划下降 15%；计划员能看懂每次变更原因；影子运行不影响现有 MES。</li>
+</ul>
+<h3>扩展方向</h3>
+<ul>
+<li>接入设备实时状态，在故障、缺料和插单时自动重算并只突出受影响部分。</li>
+<li>加入层压配方、焊机兼容、班组技能、分时电价和质量风险。</li>
+<li>记录计划员修改与拒绝原因，持续校准换型矩阵和约束优先级。</li>
+<li>从单线扩到跨线订单分配，再与 AGV、缓存和能源调度联动。</li>
+</ul>
+<h2>今日信息源</h2>
+<ul>
+<li><a href="https://www.zte.com.cn/global/about/news/China-Unicom-ZTE-and-TrinaSolar-set-a-new-benchmark-for-green-energy-digitalization.html">ZTE：天合光能 5G-A＋AI＋数字孪生</a></li>
+<li><a href="https://www.microsoft.com/en/customers/story/26648-sight-machine-microsoft-foundry">Microsoft：Sight Machine 动态排产优化</a></li>
+<li><a href="https://www.hitachi.com/en/press/articles/2025/03/0314/">Hitachi：供应商制造地点推断与风险可视化</a></li>
+<li><a href="https://uk.nttdata.com/insights/case-studies/bayer-ag">NTT DATA：Bayer 全球 OT 安全与资产可视化</a></li>
+<li><a href="https://arxiv.org/abs/2603.11666">arXiv：真实制造场景的关键工艺参数与质量缺陷预测</a></li>
+<li><a href="https://www.weforum.org/press/2026/06/new-global-lighthouse-sites-demonstrate-how-ai-is-rewiring-manufacturing-and-supply-chains/">世界经济论坛：2026 全球灯塔网络新工厂</a></li>
+<li><a href="https://github.com/google/or-tools">GitHub：OR-Tools</a></li>
+<li><a href="https://github.com/shap/shap">GitHub：SHAP</a></li>
+<li><a href="https://github.com/yzhao062/pyod">GitHub：PyOD</a></li>
+<li><a href="https://github.com/wazuh/wazuh">GitHub：Wazuh</a></li>
+<li><a href="https://github.com/PyPSA/PyPSA">GitHub：PyPSA</a></li>
+<li><a href="https://github.com/eclipse-zenoh/zenoh">GitHub：Zenoh</a></li>
+</ul>
+  </main>
+</body>
+</html>
