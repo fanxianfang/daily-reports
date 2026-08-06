@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>数字化/智能化应用灵感日报｜2026-08-06</title>
+  <style>
+    :root{--ink:#1f2937;--muted:#64748b;--line:#d9e1e8;--head:#eaf4f2;--accent:#0f766e;--bg:#f5f7fa;--card:#fff}
+    *{box-sizing:border-box} body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;line-height:1.72}
+    main{max-width:960px;margin:0 auto;padding:38px 20px 60px;background:var(--card)} h1{font-size:30px;line-height:1.3;margin:0 0 12px} h2{margin-top:38px;padding-bottom:8px;border-bottom:2px solid #b8d8d2;font-size:23px} h3{margin-top:30px;font-size:19px;color:#164e63}
+    a{color:var(--accent);overflow-wrap:anywhere} blockquote{margin:18px 0;padding:12px 16px;border-left:4px solid #5da89d;background:#f0fdfa;color:#334155}
+    .table-wrap{overflow-x:auto;margin:16px 0} table{border-collapse:collapse;width:100%;min-width:760px;font-size:14px} th,td{border:1px solid var(--line);padding:9px 10px;vertical-align:top} th{background:var(--head);text-align:left;white-space:nowrap} tr:nth-child(even) td{background:#fbfcfd}
+    li+li{margin-top:6px} .tag{display:inline-block;padding:2px 8px;border-radius:99px;background:#ecfdf5;color:#047857;font-size:13px}.note{color:var(--muted);font-size:14px}.project{border:1px solid var(--line);border-radius:10px;padding:18px 20px;background:#fbfefd}.verdict{margin-top:32px;padding:16px 18px;background:#eff6ff;border-left:4px solid #3b82f6}
+    @media(max-width:640px){main{padding:24px 14px 42px}h1{font-size:25px}h2{font-size:21px}h3{font-size:18px}.project{padding:14px}table{font-size:13px}}
+  </style>
+</head>
+<body><main>
+  <h1>数字化/智能化应用灵感日报｜2026-08-06</h1>
+  <blockquote>今日主题：把边缘 AI 模型当作“受控工艺版本”管理——先双跑、再灰度、可回滚。<br>检索与核验日期：2026-08-06（Asia/Shanghai）。优先采用 2025—2026 年资料；厂商案例中的收益为案例方自述，研究论文结果不等同于量产收益。</blockquote>
+
+  <h2>一、今日精选案例总览</h2>
+  <div class="table-wrap"><table><thead><tr><th>序号</th><th>案例名称</th><th>行业</th><th>来源</th><th>关键词</th><th>推荐等级</th><th>简要价值</th></tr></thead><tbody>
+    <tr><td>1</td><td>Volkswagen DPP 端到端工业 MLOps</td><td>汽车制造</td><td>AWS，2025-03</td><td>模型监控、数据漂移、标准流水线</td><td>★★★</td><td>训练、审批、部署、监控形成共享底座；新应用交付速度提升 2—3 倍（案例方口径）</td></tr>
+    <tr><td>2</td><td>Siemens Erlangen 云训边部署</td><td>电子制造</td><td>AWS/Siemens</td><td>工业边缘、重训练、误报率</td><td>★★★</td><td>模型训练到部署时间缩短 80%，误报率降低 50% 以上，贴近产线视觉模型迭代</td></tr>
+    <tr><td>3</td><td>IC 载板检测 Auto MLOps 复检反馈</td><td>半导体封装</td><td>ASRock Industrial，2025-06</td><td>边缘推理、复检回流</td><td>★★★</td><td>操作员复检回流模型，适合 EL/AOI 误判样本闭环；量化收益未披露</td></tr>
+    <tr><td>4</td><td>Volkswagen 工业模型持续漂移监控</td><td>汽车制造</td><td>AWS 技术文章，2025-03</td><td>数据质量、模型质量、解释性</td><td>★★★</td><td>定时采样和告警，退化后触发补数、重训或审计</td></tr>
+    <tr><td>5</td><td>EdgeMLOps 轻量视觉质检验证</td><td>工业资产检测</td><td>arXiv，2025-01</td><td>thin-edge.io、INT8、树莓派</td><td>★★☆</td><td>验证资源受限边缘设备的模型优化、发布与状态回传</td></tr>
+    <tr><td>6</td><td>焊接质量模型数据漂移与校准</td><td>汽车/焊接</td><td>JIM，2025</td><td>漂移、校准、失效预警</td><td>★★★</td><td>漂移场景准确率可降至 82.2%，必须监控置信度是否可信</td></tr>
+    <tr><td>7</td><td>半导体材料质量预测重训练节奏</td><td>半导体材料</td><td>arXiv，2026-05</td><td>五年数据、每五批重训、保形预测</td><td>★★★</td><td>固定每五批重训优于频繁调参，以预测区间表达风险</td></tr>
+    <tr><td>8</td><td>装配线边缘 YOLO 双模型质检</td><td>离散制造</td><td>Procedia CIRP，2025</td><td>YOLOv8、边缘部署、验证模型</td><td>★★☆</td><td>快模型实时检测、较大模型验证，为分级复核提供结构参考</td></tr>
+  </tbody></table></div>
+
+  <h2>二、重点案例详解</h2>
+  <h3>1. Volkswagen：工业 AI 要有统一交付流水线和生产监控</h3>
+  <ul>
+    <li><strong>来源：</strong><a href="https://aws.amazon.com/blogs/industries/how-volkswagen-and-aws-built-end-end-mlops-for-digital-production-platform/">AWS：Volkswagen DPP 端到端 MLOps</a></li>
+    <li><strong>场景与做法：</strong>多工厂质量、维护和预测模型的数据访问、训练、审批与部署方式不一致。DPP 将数据准备、训练、注册、部署和生产监控标准化，并定时检查数据质量、模型质量、偏差和解释性。</li>
+    <li><strong>技术：</strong>SageMaker、Model Monitor、Step Functions、EventBridge、DataZone、API Gateway、S3 与分账户安全护栏。</li>
+    <li><strong>光伏启发：</strong>EL/AOI 模型包必须同时绑定代码、数据版本、阈值、相机/光源、适用品种和审批记录；先单线影子运行，再按设备/班次扩圈。</li>
+    <li><strong>难度/收益：</strong>平台级高、单线只读试点中等。案例称应用建设部署可快 2—3 倍；本厂应独立量化发布工时、回滚时间和误判成本。</li>
+  </ul>
+
+  <h3>2. Siemens Erlangen：云端重训练，模型在产线边缘运行</h3>
+  <ul>
+    <li><strong>来源：</strong><a href="https://aws.amazon.com/partners/success/siemens-electronics-factory-erlangen-siemens/">AWS/Siemens 客户案例</a></li>
+    <li><strong>场景与做法：</strong>人工配置或重训模型约需 30 分钟。工厂在云端训练/重训练，通过 Siemens Industrial Edge 管理现场部署与运行，形成完整生命周期。</li>
+    <li><strong>技术：</strong>AWS 云训练、Siemens Industrial AI、Industrial Edge、模型生命周期管理。</li>
+    <li><strong>光伏启发：</strong>EL 新模型在服务器训练后封装标准推理包，只在一台检测机双跑；同时考核漏检、误拒、时延和资源占用。</li>
+    <li><strong>难度/收益：</strong>中高。案例方称部署时间缩短 80%、误报率降低 50% 以上、生命周期成本节省 90% 以上，需本厂复测。</li>
+  </ul>
+
+  <h3>3. IC 载板：把操作员复检变成模型迭代数据</h3>
+  <ul>
+    <li><strong>来源：</strong><a href="https://www.asrockind.com/en-gb/article/236">ASRock Industrial 案例，2025-06-27</a></li>
+    <li><strong>场景与做法：</strong>PEGAAi 与边缘 AIoT 设备结合，Auto MLOps 管理优化，以操作员复检形成持续反馈，并用仪表盘跟踪 AI 表现。</li>
+    <li><strong>技术：</strong>边缘 AI、Auto MLOps、工业视觉、复检反馈、性能仪表盘。</li>
+    <li><strong>光伏启发：</strong>EL/AOI 复判界面保存模型版本、原始图、缺陷框、修改原因和处置结果，每日生成高价值误判样本包，但不自动上线。</li>
+    <li><strong>难度/收益：</strong>中等。来源未披露可信量化收益，标记为<span class="tag">厂商案例且数字不足</span>。</li>
+  </ul>
+
+  <h3>4. EdgeMLOps：低算力设备也要管理版本和远程状态</h3>
+  <ul>
+    <li><strong>来源：</strong><a href="https://arxiv.org/abs/2501.17062">EdgeMLOps 论文</a></li>
+    <li><strong>场景与做法：</strong>用 Cumulocity IoT 与 thin-edge.io 发布视觉质检模型，在 Raspberry Pi 4 比较 FP32、静态 INT8、动态 INT8，并回传检测状态。</li>
+    <li><strong>技术：</strong>thin-edge.io、Cumulocity IoT、模型量化、边缘推理、资产状态同步。</li>
+    <li><strong>光伏启发：</strong>接线盒、铭牌、边框模型发布前必须在目标硬件测时延、内存、温度和丢帧；量化模型保留原模型复核通道。</li>
+    <li><strong>难度/收益：</strong>中等。论文显示 INT8 推理时间优势，但无可直接复用的工厂 ROI，属于<span class="tag">研究验证</span>。</li>
+  </ul>
+
+  <h3>5. 摩擦搅拌焊：漂移后，置信度可能比答案更危险</h3>
+  <ul>
+    <li><strong>来源：</strong><a href="https://doi.org/10.1007/s10845-025-02569-6">Journal of Intelligent Manufacturing 论文</a></li>
+    <li><strong>场景与做法：</strong>过程、材料和设备变化令预测概率不再对应真实风险。研究评估漂移条件下的校准方法，示例第二类漂移中纯模型准确率降至 82.2%。</li>
+    <li><strong>技术：</strong>深度学习质量监控、数据漂移、概率校准、可靠性评价。</li>
+    <li><strong>光伏启发：</strong>按版型、玻璃/胶膜、相机和班次切片监控 EL 置信度；切片样本不足只报警，不自动重训。</li>
+    <li><strong>难度/收益：</strong>中高；可提前识别静默失效，但依赖足够的人工复判真值。</li>
+  </ul>
+
+  <h3>6. 半导体材料：固定重训练节奏可能优于反复调参</h3>
+  <ul>
+    <li><strong>来源：</strong><a href="https://arxiv.org/abs/2605.07752">Robust and Reliable AI for Predictive Quality，2026-05</a></li>
+    <li><strong>场景与做法：</strong>用五年真实制造数据比较重训练频率；研究发现每五批固定重训练且不重复调参，在多种漂移下表现更优、开销更低，并用保形预测提供置信区间。</li>
+    <li><strong>技术：</strong>批次重训练、残差控制限、保形预测、不确定性量化。</li>
+    <li><strong>光伏启发：</strong>层压后 EL 风险、功率虚拟量测或串焊拉力预测应输出点预测 + 区间；区间跨质量限时转人工/实测。</li>
+    <li><strong>难度/收益：</strong>高；成熟批次数据下中高。可减少无效重训，但每五批结论必须按本厂漂移速度验证。</li>
+  </ul>
+
+  <h3>7. 工业装配线：快模型实时跑，大模型做验证</h3>
+  <ul>
+    <li><strong>来源：</strong><a href="https://www.sciencedirect.com/science/article/pii/S2212827125005724">Procedia CIRP 2025 案例</a></li>
+    <li><strong>场景与做法：</strong>以活动产线标注图像训练优化 YOLOv8.2s 与验证 YOLOv8.2m，前者执行边缘实时任务、后者负责验证，并与机器人流程集成。</li>
+    <li><strong>技术：</strong>YOLOv8、边缘推理、双模型验证、机器人流程控制。</li>
+    <li><strong>光伏启发：</strong>快速模型全量 EL 初筛，低置信度/严重缺陷进入大模型 + 人工复核；候选模型先作为第三路影子模型。</li>
+    <li><strong>难度/收益：</strong>中高。来源页面未披露可直接引用的量产收益，需要本厂 A/B 回放。</li>
+  </ul>
+
+  <h2>三、今日 GitHub 开源项目推荐</h2>
+  <p class="note">Star、pushed_at、归档状态与许可证于 2026-08-06 通过 GitHub API 核验；Star 会变化。进入 OT 网络前仍需完成许可证、镜像、依赖、权限和离线升级审查。</p>
+  <div class="table-wrap"><table><thead><tr><th>项目</th><th>简介</th><th>技术栈</th><th>Star</th><th>最近更新</th><th>适合借鉴点</th><th>二次开发</th></tr></thead><tbody>
+    <tr><td><a href="https://github.com/zenml-io/zenml">ZenML</a></td><td>训练、评估、注册与部署流水线</td><td>Python / Apache-2.0</td><td>5,538</td><td>2026-08-05</td><td>数据快照、评估门槛、审批和部署编排</td><td>是；不直接接 PLC</td></tr>
+    <tr><td><a href="https://github.com/bentoml/BentoML">BentoML</a></td><td>模型推理服务与多模型流水线</td><td>Python / Apache-2.0</td><td>8,761</td><td>2026-08-03</td><td>统一 API、健康检查、版本化运行包</td><td>是；实测边缘资源</td></tr>
+    <tr><td><a href="https://github.com/kserve/kserve">KServe</a></td><td>Kubernetes 标准推理平台</td><td>Go / Apache-2.0</td><td>5,774</td><td>2026-08-05</td><td>多版本、流量切分、伸缩和推理协议</td><td>有条件；需 K8s 能力</td></tr>
+    <tr><td><a href="https://github.com/argoproj/argo-rollouts">Argo Rollouts</a></td><td>Kubernetes 渐进式交付</td><td>Go / Apache-2.0</td><td>3,543</td><td>2026-08-05</td><td>蓝绿/金丝雀、指标门槛、失败回滚</td><td>是；仍需模型质量门槛</td></tr>
+    <tr><td><a href="https://github.com/kubeedge/kubeedge">KubeEdge</a></td><td>CNCF Kubernetes 原生边缘框架</td><td>Go / Apache-2.0</td><td>7,531</td><td>2026-08-04</td><td>多线边缘节点、应用版本、断网运行</td><td>有条件；单线不必先上</td></tr>
+    <tr><td><a href="https://github.com/kitops-ml/kitops">KitOps</a></td><td>模型、数据、代码和配置打包为 OCI 制品</td><td>Go / Apache-2.0</td><td>1,395</td><td>2026-08-05</td><td>不可拆分、可签名发布包和审计链</td><td>是；适合小规模试验</td></tr>
+  </tbody></table></div>
+
+  <h2>四、结合光伏工厂的应用点子</h2>
+  <h3>点子 1：EL/AOI 新旧模型影子双跑与灰度看板</h3>
+  <ul><li><strong>痛点：</strong>离线更优不代表所有版型、相机和光源都安全。</li><li><strong>思路：</strong>同图双跑，候选结果不参与放行；通过门槛后仅一台设备/一个班次灰度。</li><li><strong>数据：</strong>原图、条码、设备/相机/光源、版型、两路输出、人工复判、返工/复测。</li><li><strong>技术：</strong>版本化 API + 队列 + 对账表 + 规则门槛 + 一键切回。</li><li><strong>复杂度/收益：</strong>中等；降低升级导致的批量误放/误拒风险。</li></ul>
+  <h3>点子 2：按版型/材料/设备切片的模型漂移雷达</h3>
+  <ul><li><strong>痛点：</strong>总体准确率会掩盖局部恶化。</li><li><strong>思路：</strong>每日切片监控亮度/纹理、缺陷分布、置信度与人工推翻率；小样本只标黄。</li><li><strong>数据：</strong>图像特征、BOM/材料、设备、班次、复判和后续检测。</li><li><strong>技术：</strong>PSI/KS/嵌入距离 + 校准 + 最小样本门槛。</li><li><strong>复杂度/收益：</strong>中高；更早发现换料或相机维护后的静默失效。</li></ul>
+  <h3>点子 3：模型发布包“六件套”与签名校验</h3>
+  <ul><li><strong>痛点：</strong>现场只知模型文件名，无法复现或快速回滚。</li><li><strong>思路：</strong>绑定模型、代码、标签、阈值、硬件配置和验证报告，签名后由边缘节点拉取。</li><li><strong>数据：</strong>Git 提交、模型、数据快照 ID、配置、验证指标、审批和设备清单。</li><li><strong>技术：</strong>OCI Registry + KitOps/制品清单 + 签名 + 审计日志。</li><li><strong>复杂度/收益：</strong>中等；缩短定位和恢复时间。</li></ul>
+  <h3>点子 4：低置信度样本的复判与主动学习队列</h3>
+  <ul><li><strong>痛点：</strong>人工复判散落，新模型重复犯错。</li><li><strong>思路：</strong>低置信度、新分布、严重缺陷和新材料自动入队；复判须记录原因码与缺陷区域。</li><li><strong>数据：</strong>图像、预测、置信度、版本、人工框选和最终处置。</li><li><strong>技术：</strong>任务队列 + Web 复判 + 去重 + 数据版本 + 审批训练。</li><li><strong>复杂度/收益：</strong>中等；提高复判工时的信息收益和知识沉淀质量。</li></ul>
+  <h3>点子 5：模型升级后的质量后悔值账本</h3>
+  <ul><li><strong>痛点：</strong>当日抽样不能说明对返工、复测和客户抽检的真实影响。</li><li><strong>思路：</strong>每次发布设置 7/14/30 天观察窗，回连返工、复测、库存和客诉，估算继续用旧模型的后悔值。</li><li><strong>数据：</strong>新旧输出、处置、功率、库存/出货、客诉。</li><li><strong>技术：</strong>离线双模型回放 + 反事实对账 + 成本权重。</li><li><strong>复杂度/收益：</strong>中高；让模型 KPI 与质量成本一致。</li></ul>
+
+  <h2>五、今日最值得尝试的一个小项目</h2>
+  <div class="project">
+    <h3>EL 模型“影子双跑 + 一键回滚”只读 MVP</h3>
+    <p><strong>推荐原因：</strong>离线测试通过不代表某条产线、某个版型和某台相机都安全。项目不改 PLC、不改变当前放行；先让生产模型与候选模型对同一批图像双跑，用真实复判和后续质量证明是否值得灰度。</p>
+    <p><strong>MVP：</strong>一台 EL 检测机、一个高频版型、最近 2—4 周图像；候选模型仅影子运行。看板展示一致率、新增拦截/误拒、低置信度率、P95 时延、资源和失败率。通过后仅一个班次或 10% 建议态灰度，越界立即切回旧模型。</p>
+    <p><strong>数据：</strong>EL 原图/条码、版型/BOM、设备与相机/光源、两个模型版本与输出、耗时、人工复判、返工/复测/功率和当前放行。</p>
+    <ol>
+      <li><strong>第 1—2 天：</strong>定义严重缺陷、误拒、时延、资源护栏和回滚责任人。</li>
+      <li><strong>第 3—4 天：</strong>封装两个不可变发布包，绑定权重、代码、阈值、标签和配置。</li>
+      <li><strong>第 5—6 天：</strong>回放至少 1,000 张，覆盖少数类、换型后和相机维护后样本。</li>
+      <li><strong>第 7—8 天：</strong>在线影子运行，监控时延、丢帧、资源和漂移，不改写放行。</li>
+      <li><strong>第 9 天：</strong>按版型、缺陷、设备和班次切片评审，关键切片不达标不灰度。</li>
+      <li><strong>第 10 天：</strong>仅向指定复判员展示候选建议，演练 5 分钟内切回。</li>
+    </ol>
+    <p><strong>周期与验收：</strong>10 个工作日；1,000+ 张有效双跑；版本可追溯率 100%；严重缺陷分歧复核率 100%；P95 时延不超预算；回滚 ≤ 5 分钟；0 次自动改写放行或 PLC。</p>
+    <p><strong>扩展：</strong>同型号设备分批灰度 → 版型/材料/相机漂移雷达 → 7/14/30 天质量后悔值。自动放行需另行完成 MSA、客户规则和异常降级评审。</p>
+  </div>
+  <p class="verdict"><strong>今日判断：</strong>光伏工厂下一步不应只是“再训练一个更准的模型”，而应先建立可证明、可分批、可回退的发布机制。把新旧模型在同一真实数据上双跑，并将分歧交给可追溯的复判，往往比一次大规模替换更快得到可信收益。</p>
+</main></body></html>
